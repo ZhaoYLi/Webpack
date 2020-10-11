@@ -1,0 +1,33 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "67"
+        },
+        "corejs": "3",
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-react"
+  ],
+
+  /*"plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "absoluteRuntime": false,
+        "corejs": 2,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false,
+        "version": "7.0.0-beta.0"
+      }
+    ]
+  ] */
+
+  // 转译异步的实验性质的语法
+  // "plugins": ["dynamic-import-webpack"] 非官方提供
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
+}
