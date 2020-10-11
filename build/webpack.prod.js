@@ -15,7 +15,7 @@ const prodConfig = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css',
-            chunkFilename: '[name].chunk.css'
+            chunkFilename: '[name].chunk.css' // html中直接引用的不会走这
         })
     ],
     module: {
@@ -45,6 +45,10 @@ const prodConfig = {
                 ]
             },
         ]
+    },
+    output: {
+        filename: '[name].[contenthash].js',  //entry入口文件配置的走这个配置项
+        chunkFilename: '[name].chunk.[contenthash].js', //其他模块走这个配置项（dist中index.html中 间接引入的js）
     }
 }
 

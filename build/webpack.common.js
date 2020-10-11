@@ -118,8 +118,6 @@ module.exports = {
     output: {
         // filename: 'bundle.js',
         // publicPath: 'http://cdn.com',
-        filename: '[name].js',  //entry入口文件配置的走这个配置项
-        // chunkFilename: '[name].chunk.js', //其他模块走这个配置项（dist中index.html中 间接引入的js）
         // __dirname:当前index.js文件所在目录
         path: path.resolve(__dirname, '../dist')
     }

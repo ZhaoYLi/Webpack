@@ -60,6 +60,12 @@ const devConfig = {
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],
+
+    output: {
+        filename: '[name].js',  //entry入口文件配置的走这个配置项
+        chunkFilename: '[name].chunk.js', //其他模块走这个配置项（dist中index.html中 间接引入的js）
+
+    }
 }
 
 module.exports = merge(commonConfig, devConfig)
