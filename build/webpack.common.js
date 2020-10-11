@@ -92,6 +92,16 @@ module.exports = {
    */
     optimization: {
         /**
+         * 此配置为了兼容老版本webpack做缓存：
+         * 打包后会多出一个runtime文件
+         * main里放的是业务逻辑代码，vendors中放的是库，在webpack中，业务逻辑和库代码之间的关联叫做
+         * manifest。manifest默认是既存在main里，也存在于vendors里，在打包的时候，在旧版的webpack中，
+         * 可能会有差异，这就导致打包时即便没改变代码，contenthash也会变
+         */
+        runtimeChunk: {
+            name: 'runtime'
+        },
+        /**
     * test tree shaking
     * 在开发环境模式下需要配置下面这个，生产环境不用，只用配sideEffects 
     * usedExports: true释义：在使用tree-shaking的时候，webpack会对所有模块使用tree-shaking，

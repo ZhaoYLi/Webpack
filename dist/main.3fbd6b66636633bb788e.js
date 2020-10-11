@@ -81,7 +81,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".chunk." + {"2":"9648660cd690ca6370d7"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -449,6 +449,7 @@ getComponent().then(element => {
 /**
  * 学习prefetch和preload，以及通过提高js利用率来提高页面第一次加载速度，即提高性能
  * 把交互代码放到click.js中，在index中按需异步引入
+ * click.js被打包到里单独的文件中
  */
 
 document.addEventListener('click', () => {
@@ -471,4 +472,4 @@ console.log('miao test css split');
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=main.3fbd6b66636633bb788e.js.map

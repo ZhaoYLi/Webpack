@@ -16,4 +16,4 @@ function handleClick() {
 /***/ })
 
 }]);
-//# sourceMappingURL=2.js.map
+//# sourceMappingURL=2.chunk.9648660cd690ca6370d7.js.map
