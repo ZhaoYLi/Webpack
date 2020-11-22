@@ -1,6 +1,4 @@
 const webpack = require('webpack');  //test hmr
-const { merge } = require('webpack-merge');
-const commonConfig = require('./webpack.common')
 
 const devConfig = {
     mode: 'development', // 默认是production,打包后的js代码会被压缩，development则不会
@@ -68,4 +66,4 @@ const devConfig = {
     }
 }
 
-module.exports = merge(commonConfig, devConfig)
+module.exports = devConfig

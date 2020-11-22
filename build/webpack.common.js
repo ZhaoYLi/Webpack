@@ -3,8 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { merge } = require('webpack-merge');
+const devConfig = require('./webpack.dev');
+const prodConfig = require('./webpack.prod');
 
-module.exports = {
+const commonConfig = {
     entry: {
         // loadash: './src/lodash.js',
         main: './src/index.js',
@@ -139,5 +142,14 @@ module.exports = {
         // publicPath: 'http://cdn.com',
         // __dirname:当前index.js文件所在目录
         path: path.resolve(__dirname, '../dist')
+    }
+}
+
+// env从package.json里传过来
+module.exports = (env) => {
+    if (env && env.production) {
+        return merge(commonConfig, prodConfig)
+    } else {
+        return merge(commonConfig, devConfig)
     }
 }

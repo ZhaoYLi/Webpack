@@ -1,7 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const { merge } = require('webpack-merge');
-const commonConfig = require('./webpack.common')
 
 const prodConfig = {
     mode: 'production', // 默认是production,打包后的js代码会被压缩，development则不会
@@ -52,4 +50,4 @@ const prodConfig = {
     }
 }
 
-module.exports = merge(commonConfig, prodConfig)
+module.exports = prodConfig
