@@ -144,3 +144,11 @@ document.addEventListener('click', () => {
 import './test_css/style.css';
 import './test_css/style1.css';
 console.log('miao test css split');
+
+// test shimming
+import { ui } from './test_shimming/jquery.ui'
+ui()
+
+console.log('this---', this)
+console.log(this === window)
+

@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -70,7 +71,7 @@ module.exports = {
             use: {
                 loader: 'file-loader'
             }
-        }
+        },
         ]
     },
 
@@ -81,7 +82,15 @@ module.exports = {
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: ['**/*']
         }),
-        new BundleAnalyzerPlugin()
+        new BundleAnalyzerPlugin(),
+
+        // shimming 
+        // ProvidePlugin相当于一个垫片，当代码中使用到 $ 变量时，此插件就会自动帮你引入jquery
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            _: 'lodash',
+            _join: ['lodash', 'join']
+        })
     ],
 
     /**
