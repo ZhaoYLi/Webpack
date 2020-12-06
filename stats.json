@@ -4,20 +4,19 @@ Use Ctrl+C to close it
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "3cdf10affac5fc3a34d1",
-  "time": 2819,
-  "builtAt": 1606037439006,
+  "hash": "e0c5c45b24108af7585c",
+  "time": 1598,
+  "builtAt": 1606637555881,
   "publicPath": "",
   "outputPath": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/dist",
   "assetsByChunkName": {
-    "main": "main.chunk.js",
-    "runtime": "runtime.js",
-    "vendors~main": "vendors.js"
+    "main": "main.js",
+    "vendors~main": "vendors~main.chunk.js"
   },
   "assets": [
     {
       "name": "0.chunk.js",
-      "size": 1302,
+      "size": 1377,
       "chunks": [
         0
       ],
@@ -26,7 +25,7 @@ Use Ctrl+C to close it
       "emitted": true
     },
     {
-      "name": "4a40b3f1e21f2b32a61ce4d248b1f4ea.svg",
+      "name": "font/4a40b3f1e21f2b32a61ce4d248b1f4ea.svg",
       "size": 3332,
       "chunks": [],
       "chunkNames": [],
@@ -36,7 +35,7 @@ Use Ctrl+C to close it
       "emitted": true
     },
     {
-      "name": "765a855a4fe9c1f7dbd0be304bbfc2b7.ttf",
+      "name": "font/765a855a4fe9c1f7dbd0be304bbfc2b7.ttf",
       "size": 1984,
       "chunks": [],
       "chunkNames": [],
@@ -46,7 +45,7 @@ Use Ctrl+C to close it
       "emitted": true
     },
     {
-      "name": "c8d903635a4fe77301efb4a9128dc97f.eot",
+      "name": "font/c8d903635a4fe77301efb4a9128dc97f.eot",
       "size": 2152,
       "chunks": [],
       "chunkNames": [],
@@ -56,7 +55,7 @@ Use Ctrl+C to close it
       "emitted": true
     },
     {
-      "name": "f234d48602bea727f1504087f8118470.woff",
+      "name": "font/f234d48602bea727f1504087f8118470.woff",
       "size": 1332,
       "chunks": [],
       "chunkNames": [],
@@ -77,15 +76,15 @@ Use Ctrl+C to close it
     },
     {
       "name": "index.html",
-      "size": 366,
+      "size": 337,
       "chunks": [],
       "chunkNames": [],
       "info": {},
       "emitted": true
     },
     {
-      "name": "main.chunk.js",
-      "size": 84440,
+      "name": "main.js",
+      "size": 123277,
       "chunks": [
         "main"
       ],
@@ -96,20 +95,8 @@ Use Ctrl+C to close it
       "emitted": true
     },
     {
-      "name": "runtime.js",
-      "size": 37913,
-      "chunks": [
-        "runtime"
-      ],
-      "chunkNames": [
-        "runtime"
-      ],
-      "info": {},
-      "emitted": true
-    },
-    {
-      "name": "vendors.js",
-      "size": 4796736,
+      "name": "vendors~main.chunk.js",
+      "size": 4796284,
       "chunks": [
         "vendors~main"
       ],
@@ -124,14 +111,12 @@ Use Ctrl+C to close it
   "entrypoints": {
     "main": {
       "chunks": [
-        "runtime",
         "vendors~main",
         "main"
       ],
       "assets": [
-        "runtime.js",
-        "vendors.js",
-        "main.chunk.js"
+        "vendors~main.chunk.js",
+        "main.js"
       ],
       "children": {
         "prefetch": [
@@ -156,14 +141,12 @@ Use Ctrl+C to close it
   "namedChunkGroups": {
     "main": {
       "chunks": [
-        "runtime",
         "vendors~main",
         "main"
       ],
       "assets": [
-        "runtime.js",
-        "vendors.js",
-        "main.chunk.js"
+        "vendors~main.chunk.js",
+        "main.js"
       ],
       "children": {
         "prefetch": [
@@ -191,16 +174,15 @@ Use Ctrl+C to close it
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 203,
+      "size": 241,
       "names": [],
       "files": [
         "0.chunk.js"
       ],
-      "hash": "6c6c20d855961258c6c4",
+      "hash": "b261e650809480409dfe",
       "siblings": [],
       "parents": [
         "main",
-        "runtime",
         "vendors~main"
       ],
       "children": [],
@@ -212,7 +194,7 @@ Use Ctrl+C to close it
           "name": "./src/click.js",
           "index": 38,
           "index2": 38,
-          "size": 203,
+          "size": 241,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -229,15 +211,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -254,13 +236,12 @@ Use Ctrl+C to close it
               "loc": "125:2-127:12"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "function handleClick() {\n  let el = document.createElement('div');\n  el.innerHTML = 'hello miss miao click me, study prefetch and preload';\n  document.body.appendChild(el);\n}\n\nexport default handleClick;"
+          "source": "function handleClick() {\n  let el = document.createElement('div');\n  el.setAttribute('id', 'click_div');\n  el.innerHTML = 'hello miss miao click me, study prefetch and preload';\n  document.body.appendChild(el);\n}\n\nexport default handleClick;"
         }
       ],
       "filteredModules": 0,
@@ -280,17 +261,16 @@ Use Ctrl+C to close it
       "id": "main",
       "rendered": true,
       "initial": true,
-      "entry": false,
-      "size": 22187,
+      "entry": true,
+      "size": 22466,
       "names": [
         "main"
       ],
       "files": [
-        "main.chunk.js"
+        "main.js"
       ],
-      "hash": "a8e8b77a4c063d399757",
+      "hash": "ee2e646f82c0b646c355",
       "siblings": [
-        "runtime",
         "vendors~main"
       ],
       "parents": [],
@@ -326,8 +306,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -335,15 +315,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/HMR/style.css",
               "name": "./src/HMR/style.css",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 248,
-            "building": 848,
+            "factory": 84,
+            "building": 350,
             "dependencies": 0
           },
           "failed": false,
@@ -379,7 +359,6 @@ Use Ctrl+C to close it
               "loc": "46:18-131"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
@@ -410,8 +389,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -419,15 +398,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/test_css/style.css",
               "name": "./src/test_css/style.css",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 245,
-            "building": 850,
+            "factory": 82,
+            "building": 352,
             "dependencies": 0
           },
           "failed": false,
@@ -463,7 +442,6 @@ Use Ctrl+C to close it
               "loc": "46:18-131"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
@@ -494,8 +472,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -503,15 +481,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/test_css/style1.css",
               "name": "./src/test_css/style1.css",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 241,
-            "building": 854,
+            "factory": 79,
+            "building": 355,
             "dependencies": 0
           },
           "failed": false,
@@ -547,7 +525,6 @@ Use Ctrl+C to close it
               "loc": "46:18-132"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
@@ -578,8 +555,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -587,16 +564,16 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./src/iconfont.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 252,
-            "building": 842,
-            "dependencies": 0
+            "factory": 87,
+            "building": 344,
+            "dependencies": 2
           },
           "failed": false,
           "errors": 0,
@@ -631,7 +608,6 @@ Use Ctrl+C to close it
               "loc": "46:18-179"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
@@ -662,8 +638,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -671,15 +647,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
               "name": "./src/index.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 258,
-            "building": 1064
+            "factory": 88,
+            "building": 406
           },
           "failed": false,
           "errors": 0,
@@ -714,7 +690,6 @@ Use Ctrl+C to close it
               "loc": "46:18-176"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
@@ -745,15 +720,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -779,9 +754,6 @@ Use Ctrl+C to close it
               "loc": "32:0-7"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": [
             "default"
           ],
@@ -795,7 +767,7 @@ Use Ctrl+C to close it
           "name": "./src/HMR/number.js",
           "index": 16,
           "index2": 15,
-          "size": 190,
+          "size": 194,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -812,15 +784,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -873,13 +845,12 @@ Use Ctrl+C to close it
               "loc": "38:4-10"
             }
           ],
-          "usedExports": true,
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "function number() {\n  var div = document.createElement('div');\n  div.setAttribute('id', 'number');\n  div.innerHTML = 900000000000;\n  document.body.appendChild(div);\n}\n\nexport default number;"
+          "source": "function number() {\n  var div = document.createElement('div');\n  div.setAttribute('id', 'number');\n  div.innerHTML = 8888999000000000;\n  document.body.appendChild(div);\n}\n\nexport default number;"
         },
         {
           "id": "./src/HMR/style.css",
@@ -904,15 +875,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -929,7 +900,6 @@ Use Ctrl+C to close it
               "loc": "5:0-25"
             }
           ],
-          "usedExports": false,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
@@ -937,11 +907,11 @@ Use Ctrl+C to close it
         },
         {
           "id": "./src/font/iconfont.eot?t=1599402226159",
-          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.eot?t=1599402226159",
+          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.eot?t=1599402226159",
           "name": "./src/font/iconfont.eot?t=1599402226159",
           "index": 9,
           "index2": 6,
-          "size": 80,
+          "size": 85,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -958,8 +928,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -967,9 +937,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./src/iconfont.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -977,21 +947,21 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
               "profile": {
-                "factory": 252,
-                "building": 842,
-                "dependencies": 0
+                "factory": 87,
+                "building": 344,
+                "dependencies": 2
               }
             }
           ],
           "profile": {
-            "factory": 26,
+            "factory": 21,
             "building": 4
           },
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "c8d903635a4fe77301efb4a9128dc97f.eot"
+            "font/c8d903635a4fe77301efb4a9128dc97f.eot"
           ],
           "reasons": [
             {
@@ -1022,23 +992,20 @@ Use Ctrl+C to close it
               "loc": "10:73-102"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "export default __webpack_public_path__ + \"c8d903635a4fe77301efb4a9128dc97f.eot\";"
+          "source": "export default __webpack_public_path__ + \"font/c8d903635a4fe77301efb4a9128dc97f.eot\";"
         },
         {
           "id": "./src/font/iconfont.svg?t=1599402226159",
-          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.svg?t=1599402226159",
+          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.svg?t=1599402226159",
           "name": "./src/font/iconfont.svg?t=1599402226159",
           "index": 12,
           "index2": 9,
-          "size": 80,
+          "size": 85,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1055,8 +1022,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -1064,9 +1031,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./src/iconfont.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -1074,21 +1041,21 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
               "profile": {
-                "factory": 252,
-                "building": 842,
-                "dependencies": 0
+                "factory": 87,
+                "building": 344,
+                "dependencies": 2
               }
             }
           ],
           "profile": {
-            "factory": 26,
+            "factory": 21,
             "building": 4
           },
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "4a40b3f1e21f2b32a61ce4d248b1f4ea.svg"
+            "font/4a40b3f1e21f2b32a61ce4d248b1f4ea.svg"
           ],
           "reasons": [
             {
@@ -1110,23 +1077,20 @@ Use Ctrl+C to close it
               "loc": "13:73-102"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "export default __webpack_public_path__ + \"4a40b3f1e21f2b32a61ce4d248b1f4ea.svg\";"
+          "source": "export default __webpack_public_path__ + \"font/4a40b3f1e21f2b32a61ce4d248b1f4ea.svg\";"
         },
         {
           "id": "./src/font/iconfont.ttf?t=1599402226159",
-          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.ttf?t=1599402226159",
+          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.ttf?t=1599402226159",
           "name": "./src/font/iconfont.ttf?t=1599402226159",
           "index": 11,
           "index2": 8,
-          "size": 80,
+          "size": 85,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1143,8 +1107,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -1152,9 +1116,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./src/iconfont.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -1162,21 +1126,21 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
               "profile": {
-                "factory": 252,
-                "building": 842,
-                "dependencies": 0
+                "factory": 87,
+                "building": 344,
+                "dependencies": 2
               }
             }
           ],
           "profile": {
-            "factory": 26,
+            "factory": 21,
             "building": 4
           },
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "765a855a4fe9c1f7dbd0be304bbfc2b7.ttf"
+            "font/765a855a4fe9c1f7dbd0be304bbfc2b7.ttf"
           ],
           "reasons": [
             {
@@ -1198,23 +1162,20 @@ Use Ctrl+C to close it
               "loc": "12:73-102"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "export default __webpack_public_path__ + \"765a855a4fe9c1f7dbd0be304bbfc2b7.ttf\";"
+          "source": "export default __webpack_public_path__ + \"font/765a855a4fe9c1f7dbd0be304bbfc2b7.ttf\";"
         },
         {
           "id": "./src/font/iconfont.woff?t=1599402226159",
-          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.woff?t=1599402226159",
+          "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.woff?t=1599402226159",
           "name": "./src/font/iconfont.woff?t=1599402226159",
           "index": 10,
           "index2": 7,
-          "size": 81,
+          "size": 86,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1231,8 +1192,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -1240,9 +1201,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./src/iconfont.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -1250,21 +1211,21 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
               "profile": {
-                "factory": 252,
-                "building": 842,
-                "dependencies": 0
+                "factory": 87,
+                "building": 344,
+                "dependencies": 2
               }
             }
           ],
           "profile": {
-            "factory": 26,
+            "factory": 21,
             "building": 4
           },
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "f234d48602bea727f1504087f8118470.woff"
+            "font/f234d48602bea727f1504087f8118470.woff"
           ],
           "reasons": [
             {
@@ -1286,15 +1247,12 @@ Use Ctrl+C to close it
               "loc": "11:73-102"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": [
             "default"
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "export default __webpack_public_path__ + \"f234d48602bea727f1504087f8118470.woff\";"
+          "source": "export default __webpack_public_path__ + \"font/f234d48602bea727f1504087f8118470.woff\";"
         },
         {
           "id": "./src/iconfont.scss",
@@ -1319,15 +1277,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1344,7 +1302,6 @@ Use Ctrl+C to close it
               "loc": "3:0-25"
             }
           ],
-          "usedExports": false,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
@@ -1356,7 +1313,7 @@ Use Ctrl+C to close it
           "name": "./src/index.js",
           "index": 0,
           "index2": 37,
-          "size": 4259,
+          "size": 4514,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1369,8 +1326,8 @@ Use Ctrl+C to close it
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           },
           "failed": false,
           "errors": 0,
@@ -1387,11 +1344,10 @@ Use Ctrl+C to close it
               "loc": "main"
             }
           ],
-          "usedExports": true,
           "providedExports": [],
           "optimizationBailout": [],
           "depth": 0,
-          "source": "import avatar from './md.jpg';\nimport './index.scss';\nimport './iconfont.scss'; // test hmr\n\nimport './HMR/style.css';\n/**\n * '@babel/polyfill' 会在window环境中绑定一些全局变量，比如promise\n * 会使包变得很大,所以配置了presets\n * 使用useBuiltIns配置的时候可以不用手动引入polyfill\n */\n// import '@babel/polyfill' \n\nvar img = new Image();\nimg.src = avatar;\nimg.classList.add('avatar');\nvar cat = document.getElementById(\"cat\");\ncat.append(img); // test hot-module-replacement\n\n/* var btn = document.createElement('button')\nbtn.innerHTML = '新增'\ndocument.body.appendChild(btn)\n\nbtn.onclick = function () {\n    var div = document.createElement('div')\n    div.innerHTML = 'item'\n    document.body.appendChild(div)\n}\n*/\n\nimport counter from './HMR/counter';\nimport number from './HMR/number';\ncounter();\nnumber(); // 如果当前项目开启了HMR\n\nif (module.hot) {\n  module.hot.accept('./HMR/number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // test babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // test babel deal react code\n\nimport React, { Component } from 'react';\nimport ReactDom from 'react-dom';\n\nclass App extends Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      style: {\n        marginTop: 100,\n        marginBottom: 100\n      }\n    }, \"hello react !!!!\");\n  }\n\n}\n\nReactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root')); // test tree shaking: \n\n/**\n * 作用：把一个模块里没用的东西都摇晃掉，引入的东西再打包，没引入的就不打包\n * tree shaking 只支持es module引入方式（静态引入）\n * 开发环境下，需在webpack.config中配置optimization:{}，在package中配置：sideEffects: false 或 sideEffects: ['*.css']\n * sideEffects: ['*.css']-----代表css文件不采用 tree shaking方式打包\n */\n\nimport { add } from './math';\nadd(1, 2); // test code splitting\n\n/**\n * 方法一\n * 会使lodash和业务代码一起打包到main.js文件中，会使得main.js文件非常大（假设2mb）\n * 用户首次访问页面时，需要加载main.js（2mb）\n * 当页面业务逻辑发生变化时，又要加载2mb的内容\n */\n// import _ from 'lodash';\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法二\n * 把lodash放单独的一个lodash.js文件，并在webpack中配置入口\n * 这样在打包的时候main.js就会被拆成lodash.js（1mb）和main.js（1mb）\n * 当页面业务逻辑发生变化时，就只需要加载main.js即可(1mb),lodash.js会被缓存到浏览器中\n */\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法三(同步代码分割)\n * 利用webpack自带的splitChunks功能\n * 就不需要手动创建lodash文件和entry\n */\n\nimport _ from 'lodash';\nconsole.log(_.join([1, 2, 3, 4, 5], '***'));\n/**\n * 异步代码分割 不用做任何配置\n */\n// function getComponent() {\n//     return import(/* webpackChunkName: 'lodash' */ 'lodash').then(({ default: _ }) => {\n//         var element = document.createElement('div')\n//         console.log('_________', _)\n//         element.innerHTML = _.concat(['miss', 'miao'], '8888888')\n//         return element\n//     })\n// }\n\n/*\ngetComponent().then(element => {\n    console.log('run getComponent')\n    document.body.appendChild(element)\n})*/\n\n/**\n * 学习prefetch和preload，以及通过提高js利用率来提高页面第一次加载速度，即提高性能\n * 把交互代码放到click.js中，在index中按需异步引入\n * click.js被打包到里单独的文件中\n */\n\ndocument.addEventListener('click', () => {\n  import(\n  /*webpackPrefetch: true*/\n  './click').then(({\n    default: func\n  }) => {\n    func();\n  });\n});\n/**\n * test css spliting\n * 使用mini-css-extract-plugin插件，把css文件单独打包到一个文件\n * 需配置loader和plugin\n * 此插件不支持hmr，所以适合在线上打包使用\n *  */\n\nimport './test_css/style.css';\nimport './test_css/style1.css';\nconsole.log('miao test css split'); // test shimming\n\nimport { ui } from './test_shimming/jquery.ui';\nui();\nconsole.log('this---', this);\nconsole.log(this === window);"
+          "source": "import avatar from './md.jpg';\nimport './index.scss';\nimport './iconfont.scss'; // test hmr\n\nimport './HMR/style.css';\n/**\n * '@babel/polyfill' 会在window环境中绑定一些全局变量，比如promise\n * 会使包变得很大,所以配置了presets\n * 使用useBuiltIns配置的时候可以不用手动引入polyfill\n */\n// import '@babel/polyfill' \n\nvar img = new Image();\nimg.src = avatar;\nimg.classList.add('avatar');\nvar cat = document.getElementById(\"cat\");\ncat.append(img); // test hot-module-replacement\n\n/* var btn = document.createElement('button')\nbtn.innerHTML = '新增'\ndocument.body.appendChild(btn)\n\nbtn.onclick = function () {\n    var div = document.createElement('div')\n    div.innerHTML = 'item'\n    document.body.appendChild(div)\n}\n*/\n\nimport counter from './HMR/counter';\nimport number from './HMR/number';\ncounter();\nnumber(); // 如果当前项目开启了HMR\n\nif (module.hot) {\n  module.hot.accept('./HMR/number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // test babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // test babel deal react code\n\nimport React, { Component } from 'react';\nimport ReactDom from 'react-dom';\n\nclass App extends Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      style: {\n        marginTop: 100,\n        marginBottom: 100\n      }\n    }, \"hello react !!!!\");\n  }\n\n}\n\nReactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root')); // test tree shaking: \n\n/**\n * 作用：把一个模块里没用的东西都摇晃掉，引入的东西再打包，没引入的就不打包\n * tree shaking 只支持es module引入方式（静态引入）\n * 开发环境下，需在webpack.config中配置optimization:{}，在package中配置：sideEffects: false 或 sideEffects: ['*.css']\n * sideEffects: ['*.css']-----代表css文件不采用 tree shaking方式打包\n */\n\nimport { add } from './math';\nadd(1, 2); // test code splitting\n\n/**\n * 方法一\n * 会使lodash和业务代码一起打包到main.js文件中，会使得main.js文件非常大（假设2mb）\n * 用户首次访问页面时，需要加载main.js（2mb）\n * 当页面业务逻辑发生变化时，又要加载2mb的内容\n */\n// import _ from 'lodash';\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法二\n * 把lodash放单独的一个lodash.js文件，并在webpack中配置入口\n * 这样在打包的时候main.js就会被拆成lodash.js（1mb）和main.js（1mb）\n * 当页面业务逻辑发生变化时，就只需要加载main.js即可(1mb),lodash.js会被缓存到浏览器中\n */\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法三(同步代码分割)\n * 利用webpack自带的splitChunks功能\n * 就不需要手动创建lodash文件和entry\n */\n\nimport _ from 'lodash';\nconsole.log(_.join([1, 2, 3, 4, 5], '***'));\n/**\n * 异步代码分割 不用做任何配置\n */\n// function getComponent() {\n//     return import(/* webpackChunkName: 'lodash' */ 'lodash').then(({ default: _ }) => {\n//         var element = document.createElement('div')\n//         console.log('_________', _)\n//         element.innerHTML = _.concat(['miss', 'miao'], '8888888')\n//         return element\n//     })\n// }\n\n/*\ngetComponent().then(element => {\n    console.log('run getComponent')\n    document.body.appendChild(element)\n})*/\n\n/**\n * 学习prefetch和preload，以及通过提高js利用率来提高页面第一次加载速度，即提高性能\n * 把交互代码放到click.js中，在index中按需异步引入\n * click.js被打包到里单独的文件中\n */\n\ndocument.addEventListener('click', () => {\n  import(\n  /*webpackPrefetch: true*/\n  './click').then(({\n    default: func\n  }) => {\n    func();\n  });\n}); // document.addEventListener('click', () => {\n//     let el = document.createElement('div')\n//     el.setAttribute('id', 'click_div')\n//     el.innerHTML = 'hello miss miao click me, study prefetch and preload'\n//     document.body.appendChild(el)\n// })\n\n/**\n * test css spliting\n * 使用mini-css-extract-plugin插件，把css文件单独打包到一个文件\n * 需配置loader和plugin\n * 此插件不支持hmr，所以适合在线上打包使用\n *  */\n\nimport './test_css/style.css';\nimport './test_css/style1.css';\nconsole.log('miao test css split'); // test shimming\n\nimport { ui } from './test_shimming/jquery.ui';\nui();\nconsole.log('this---', this);\nconsole.log(this === window);"
         },
         {
           "id": "./src/index.scss",
@@ -1416,15 +1372,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1441,7 +1397,6 @@ Use Ctrl+C to close it
               "loc": "2:0-22"
             }
           ],
-          "usedExports": false,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
@@ -1470,15 +1425,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1503,9 +1458,6 @@ Use Ctrl+C to close it
               "userRequest": "./math",
               "loc": "73:0-3"
             }
-          ],
-          "usedExports": [
-            "add"
           ],
           "providedExports": [
             "add",
@@ -1538,15 +1490,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1573,9 +1525,6 @@ Use Ctrl+C to close it
               "userRequest": "./md.jpg",
               "loc": "14:10-16"
             }
-          ],
-          "usedExports": [
-            "default"
           ],
           "providedExports": [
             "default"
@@ -1607,15 +1556,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1629,10 +1578,9 @@ Use Ctrl+C to close it
               "moduleName": "./src/index.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./test_css/style.css",
-              "loc": "140:0-30"
+              "loc": "146:0-30"
             }
           ],
-          "usedExports": false,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
@@ -1661,15 +1609,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1683,10 +1631,9 @@ Use Ctrl+C to close it
               "moduleName": "./src/index.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./test_css/style1.css",
-              "loc": "141:0-31"
+              "loc": "147:0-31"
             }
           ],
-          "usedExports": false,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
@@ -1715,15 +1662,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -1737,7 +1684,7 @@ Use Ctrl+C to close it
               "moduleName": "./src/index.js",
               "type": "harmony side effect evaluation",
               "userRequest": "./test_shimming/jquery.ui",
-              "loc": "144:0-47"
+              "loc": "150:0-47"
             },
             {
               "moduleId": "./src/index.js",
@@ -1746,11 +1693,8 @@ Use Ctrl+C to close it
               "moduleName": "./src/index.js",
               "type": "harmony import specifier",
               "userRequest": "./test_shimming/jquery.ui",
-              "loc": "145:0-2"
+              "loc": "151:0-2"
             }
-          ],
-          "usedExports": [
-            "ui"
           ],
           "providedExports": [
             "ui"
@@ -1760,41 +1704,6 @@ Use Ctrl+C to close it
           "source": "export function ui() {\n  $('body').css('background', 'purple');\n}"
         }
       ],
-      "filteredModules": 0,
-      "origins": [
-        {
-          "module": "",
-          "moduleIdentifier": "",
-          "moduleName": "",
-          "loc": "main",
-          "request": "./src/index.js",
-          "reasons": []
-        }
-      ]
-    },
-    {
-      "id": "runtime",
-      "rendered": true,
-      "initial": true,
-      "entry": true,
-      "size": 0,
-      "names": [
-        "runtime"
-      ],
-      "files": [
-        "runtime.js"
-      ],
-      "hash": "cc95e313dfa3c37d1562",
-      "siblings": [
-        "main",
-        "vendors~main"
-      ],
-      "parents": [],
-      "children": [
-        0
-      ],
-      "childrenByOrder": {},
-      "modules": [],
       "filteredModules": 0,
       "origins": [
         {
@@ -1818,12 +1727,11 @@ Use Ctrl+C to close it
         "vendors~main"
       ],
       "files": [
-        "vendors.js"
+        "vendors~main.chunk.js"
       ],
-      "hash": "f8b7468a81e7c20f2d86",
+      "hash": "552a1f9fcb841ba07d22",
       "siblings": [
-        "main",
-        "runtime"
+        "main"
       ],
       "parents": [],
       "children": [
@@ -1854,8 +1762,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -1863,9 +1771,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
               "name": "./src/index.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -1873,14 +1781,14 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
               "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.scss",
               "profile": {
-                "factory": 258,
-                "building": 1064
+                "factory": 88,
+                "building": 406
               }
             }
           ],
           "profile": {
             "factory": 7,
-            "building": 23
+            "building": 13
           },
           "failed": false,
           "errors": 0,
@@ -1978,9 +1886,6 @@ Use Ctrl+C to close it
               "loc": "3:30-57"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
@@ -2009,8 +1914,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2018,9 +1923,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./src/iconfont.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2028,14 +1933,14 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
               "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
               "profile": {
-                "factory": 252,
-                "building": 842,
-                "dependencies": 0
+                "factory": 87,
+                "building": 344,
+                "dependencies": 2
               }
             }
           ],
           "profile": {
-            "factory": 26,
+            "factory": 21,
             "building": 4
           },
           "failed": false,
@@ -2098,9 +2003,6 @@ Use Ctrl+C to close it
               "loc": "13:41-72"
             }
           ],
-          "usedExports": [
-            "default"
-          ],
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
@@ -2129,8 +2031,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2138,15 +2040,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/test_shimming/jquery.ui.js",
               "name": "./src/test_shimming/jquery.ui.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 443,
-            "building": 976
+            "factory": 184,
+            "building": 476
           },
           "failed": false,
           "errors": 0,
@@ -2163,7 +2065,6 @@ Use Ctrl+C to close it
               "loc": "1:0-17"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
@@ -2192,15 +2093,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -2225,9 +2126,6 @@ Use Ctrl+C to close it
               "userRequest": "lodash",
               "loc": "99:12-13"
             }
-          ],
-          "usedExports": [
-            "default"
           ],
           "providedExports": null,
           "optimizationBailout": [],
@@ -2257,8 +2155,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2266,9 +2164,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
               "name": "./node_modules/react/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2276,13 +2174,13 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/cjs/react.development.js",
               "name": "./node_modules/react/cjs/react.development.js",
               "profile": {
-                "factory": 14,
-                "building": 92
+                "factory": 10,
+                "building": 62
               }
             }
           ],
           "profile": {
-            "factory": 746,
+            "factory": 281,
             "building": 4
           },
           "failed": false,
@@ -2309,7 +2207,6 @@ Use Ctrl+C to close it
               "loc": "18:14-38"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
@@ -2338,8 +2235,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2347,9 +2244,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
               "name": "./node_modules/react/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2357,13 +2254,13 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/cjs/react.development.js",
               "name": "./node_modules/react/cjs/react.development.js",
               "profile": {
-                "factory": 14,
-                "building": 92
+                "factory": 10,
+                "building": 62
               }
             }
           ],
           "profile": {
-            "factory": 746,
+            "factory": 281,
             "building": 4
           },
           "failed": false,
@@ -2390,7 +2287,6 @@ Use Ctrl+C to close it
               "loc": "19:21-57"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
@@ -2419,8 +2315,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2428,9 +2324,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
               "name": "./node_modules/react/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2438,8 +2334,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/cjs/react.development.js",
               "name": "./node_modules/react/cjs/react.development.js",
               "profile": {
-                "factory": 14,
-                "building": 92
+                "factory": 10,
+                "building": 62
               }
             },
             {
@@ -2447,13 +2343,13 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/prop-types/checkPropTypes.js",
               "name": "./node_modules/prop-types/checkPropTypes.js",
               "profile": {
-                "factory": 746,
+                "factory": 281,
                 "building": 4
               }
             }
           ],
           "profile": {
-            "factory": 7,
+            "factory": 6,
             "building": 2
           },
           "failed": false,
@@ -2471,7 +2367,6 @@ Use Ctrl+C to close it
               "loc": "13:29-66"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
@@ -2500,8 +2395,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2509,16 +2404,16 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
               "name": "./node_modules/react-dom/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 12,
-            "building": 1305,
-            "dependencies": 2
+            "factory": 11,
+            "building": 767,
+            "dependencies": 3
           },
           "failed": false,
           "errors": 0,
@@ -2535,7 +2430,6 @@ Use Ctrl+C to close it
               "loc": "37:19-60"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
@@ -2564,15 +2458,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -2597,9 +2491,6 @@ Use Ctrl+C to close it
               "userRequest": "react-dom",
               "loc": "63:0-8"
             }
-          ],
-          "usedExports": [
-            "default"
           ],
           "providedExports": null,
           "optimizationBailout": [],
@@ -2629,8 +2520,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2638,15 +2529,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
               "name": "./node_modules/react/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 14,
-            "building": 92
+            "factory": 10,
+            "building": 62
           },
           "failed": false,
           "errors": 0,
@@ -2663,7 +2554,6 @@ Use Ctrl+C to close it
               "loc": "6:19-56"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
@@ -2692,15 +2582,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             }
           ],
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           },
           "failed": false,
           "errors": 0,
@@ -2753,7 +2643,6 @@ Use Ctrl+C to close it
               "loc": "63:30-35"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
@@ -2782,8 +2671,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2791,9 +2680,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
               "name": "./node_modules/react-dom/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2801,9 +2690,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
               "name": "./node_modules/react-dom/cjs/react-dom.development.js",
               "profile": {
-                "factory": 12,
-                "building": 1305,
-                "dependencies": 2
+                "factory": 11,
+                "building": 767,
+                "dependencies": 3
               }
             },
             {
@@ -2812,13 +2701,13 @@ Use Ctrl+C to close it
               "name": "./node_modules/scheduler/tracing.js",
               "profile": {
                 "factory": 5,
-                "building": 6
+                "building": 0
               }
             }
           ],
           "profile": {
-            "factory": 1,
-            "building": 15
+            "factory": 0,
+            "building": 9
           },
           "failed": false,
           "errors": 0,
@@ -2835,7 +2724,6 @@ Use Ctrl+C to close it
               "loc": "6:19-68"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
@@ -2864,8 +2752,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2873,9 +2761,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
               "name": "./node_modules/react-dom/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2883,9 +2771,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
               "name": "./node_modules/react-dom/cjs/react-dom.development.js",
               "profile": {
-                "factory": 12,
-                "building": 1305,
-                "dependencies": 2
+                "factory": 11,
+                "building": 767,
+                "dependencies": 3
               }
             },
             {
@@ -2894,13 +2782,13 @@ Use Ctrl+C to close it
               "name": "./node_modules/scheduler/index.js",
               "profile": {
                 "factory": 5,
-                "building": 6
+                "building": 0
               }
             }
           ],
           "profile": {
             "factory": 1,
-            "building": 18
+            "building": 11
           },
           "failed": false,
           "errors": 0,
@@ -2917,7 +2805,6 @@ Use Ctrl+C to close it
               "loc": "6:19-60"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
@@ -2946,8 +2833,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -2955,9 +2842,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
               "name": "./node_modules/react-dom/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -2965,15 +2852,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
               "name": "./node_modules/react-dom/cjs/react-dom.development.js",
               "profile": {
-                "factory": 12,
-                "building": 1305,
-                "dependencies": 2
+                "factory": 11,
+                "building": 767,
+                "dependencies": 3
               }
             }
           ],
           "profile": {
             "factory": 5,
-            "building": 6
+            "building": 0
           },
           "failed": false,
           "errors": 0,
@@ -2990,7 +2877,6 @@ Use Ctrl+C to close it
               "loc": "20:16-36"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
@@ -3019,8 +2905,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -3028,9 +2914,9 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
               "name": "./node_modules/react-dom/index.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             },
             {
@@ -3038,15 +2924,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
               "name": "./node_modules/react-dom/cjs/react-dom.development.js",
               "profile": {
-                "factory": 12,
-                "building": 1305,
-                "dependencies": 2
+                "factory": 11,
+                "building": 767,
+                "dependencies": 3
               }
             }
           ],
           "profile": {
             "factory": 5,
-            "building": 6
+            "building": 0
           },
           "failed": false,
           "errors": 0,
@@ -3063,7 +2949,6 @@ Use Ctrl+C to close it
               "loc": "22:14-42"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
@@ -3092,8 +2977,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -3101,15 +2986,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
               "name": "./src/index.scss",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
-            "factory": 258,
-            "building": 1064
+            "factory": 88,
+            "building": 406
           },
           "failed": false,
           "errors": 0,
@@ -3162,7 +3047,6 @@ Use Ctrl+C to close it
               "loc": "1:10-94"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
@@ -3191,8 +3075,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -3200,15 +3084,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/lodash/lodash.js",
               "name": "./node_modules/lodash/lodash.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
             "factory": 13,
-            "building": 8
+            "building": 4
           },
           "failed": false,
           "errors": 0,
@@ -3225,7 +3109,6 @@ Use Ctrl+C to close it
               "loc": "1:0-41"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
@@ -3254,8 +3137,8 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 30,
-                "building": 742
+                "factory": 33,
+                "building": 349
               }
             },
             {
@@ -3263,15 +3146,15 @@ Use Ctrl+C to close it
               "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/lodash/lodash.js",
               "name": "./node_modules/lodash/lodash.js",
               "profile": {
-                "factory": 473,
-                "building": 1157,
-                "dependencies": 252
+                "factory": 232,
+                "building": 602,
+                "dependencies": 87
               }
             }
           ],
           "profile": {
             "factory": 13,
-            "building": 8
+            "building": 4
           },
           "failed": false,
           "errors": 0,
@@ -3288,7 +3171,6 @@ Use Ctrl+C to close it
               "loc": "1:0-41"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
@@ -3332,8 +3214,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3341,15 +3223,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/HMR/style.css",
           "name": "./src/HMR/style.css",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 248,
-        "building": 848,
+        "factory": 84,
+        "building": 350,
         "dependencies": 0
       },
       "failed": false,
@@ -3385,7 +3267,6 @@ Use Ctrl+C to close it
           "loc": "46:18-131"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
@@ -3416,8 +3297,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3425,15 +3306,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/test_css/style.css",
           "name": "./src/test_css/style.css",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 245,
-        "building": 850,
+        "factory": 82,
+        "building": 352,
         "dependencies": 0
       },
       "failed": false,
@@ -3469,7 +3350,6 @@ Use Ctrl+C to close it
           "loc": "46:18-131"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
@@ -3500,8 +3380,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3509,15 +3389,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/test_css/style1.css",
           "name": "./src/test_css/style1.css",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 241,
-        "building": 854,
+        "factory": 79,
+        "building": 355,
         "dependencies": 0
       },
       "failed": false,
@@ -3553,7 +3433,6 @@ Use Ctrl+C to close it
           "loc": "46:18-132"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
@@ -3584,8 +3463,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3593,16 +3472,16 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./src/iconfont.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 252,
-        "building": 842,
-        "dependencies": 0
+        "factory": 87,
+        "building": 344,
+        "dependencies": 2
       },
       "failed": false,
       "errors": 0,
@@ -3637,7 +3516,6 @@ Use Ctrl+C to close it
           "loc": "46:18-179"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
@@ -3668,8 +3546,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3677,15 +3555,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
           "name": "./src/index.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 258,
-        "building": 1064
+        "factory": 88,
+        "building": 406
       },
       "failed": false,
       "errors": 0,
@@ -3720,7 +3598,6 @@ Use Ctrl+C to close it
           "loc": "46:18-176"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
@@ -3751,8 +3628,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3760,9 +3637,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
           "name": "./src/index.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -3770,14 +3647,14 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
           "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.scss",
           "profile": {
-            "factory": 258,
-            "building": 1064
+            "factory": 88,
+            "building": 406
           }
         }
       ],
       "profile": {
         "factory": 7,
-        "building": 23
+        "building": 13
       },
       "failed": false,
       "errors": 0,
@@ -3875,9 +3752,6 @@ Use Ctrl+C to close it
           "loc": "3:30-57"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
@@ -3906,8 +3780,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -3915,9 +3789,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./src/iconfont.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -3925,14 +3799,14 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
           "profile": {
-            "factory": 252,
-            "building": 842,
-            "dependencies": 0
+            "factory": 87,
+            "building": 344,
+            "dependencies": 2
           }
         }
       ],
       "profile": {
-        "factory": 26,
+        "factory": 21,
         "building": 4
       },
       "failed": false,
@@ -3995,9 +3869,6 @@ Use Ctrl+C to close it
           "loc": "13:41-72"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
@@ -4026,8 +3897,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4035,15 +3906,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/test_shimming/jquery.ui.js",
           "name": "./src/test_shimming/jquery.ui.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 443,
-        "building": 976
+        "factory": 184,
+        "building": 476
       },
       "failed": false,
       "errors": 0,
@@ -4060,7 +3931,6 @@ Use Ctrl+C to close it
           "loc": "1:0-17"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
@@ -4089,15 +3959,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -4122,9 +3992,6 @@ Use Ctrl+C to close it
           "userRequest": "lodash",
           "loc": "99:12-13"
         }
-      ],
-      "usedExports": [
-        "default"
       ],
       "providedExports": null,
       "optimizationBailout": [],
@@ -4154,8 +4021,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4163,9 +4030,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
           "name": "./node_modules/react/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4173,13 +4040,13 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/cjs/react.development.js",
           "name": "./node_modules/react/cjs/react.development.js",
           "profile": {
-            "factory": 14,
-            "building": 92
+            "factory": 10,
+            "building": 62
           }
         }
       ],
       "profile": {
-        "factory": 746,
+        "factory": 281,
         "building": 4
       },
       "failed": false,
@@ -4206,7 +4073,6 @@ Use Ctrl+C to close it
           "loc": "18:14-38"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
@@ -4235,8 +4101,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4244,9 +4110,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
           "name": "./node_modules/react/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4254,13 +4120,13 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/cjs/react.development.js",
           "name": "./node_modules/react/cjs/react.development.js",
           "profile": {
-            "factory": 14,
-            "building": 92
+            "factory": 10,
+            "building": 62
           }
         }
       ],
       "profile": {
-        "factory": 746,
+        "factory": 281,
         "building": 4
       },
       "failed": false,
@@ -4287,7 +4153,6 @@ Use Ctrl+C to close it
           "loc": "19:21-57"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
@@ -4316,8 +4181,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4325,9 +4190,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
           "name": "./node_modules/react/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4335,8 +4200,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/cjs/react.development.js",
           "name": "./node_modules/react/cjs/react.development.js",
           "profile": {
-            "factory": 14,
-            "building": 92
+            "factory": 10,
+            "building": 62
           }
         },
         {
@@ -4344,13 +4209,13 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/prop-types/checkPropTypes.js",
           "name": "./node_modules/prop-types/checkPropTypes.js",
           "profile": {
-            "factory": 746,
+            "factory": 281,
             "building": 4
           }
         }
       ],
       "profile": {
-        "factory": 7,
+        "factory": 6,
         "building": 2
       },
       "failed": false,
@@ -4368,7 +4233,6 @@ Use Ctrl+C to close it
           "loc": "13:29-66"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 4,
@@ -4397,8 +4261,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4406,16 +4270,16 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
           "name": "./node_modules/react-dom/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 12,
-        "building": 1305,
-        "dependencies": 2
+        "factory": 11,
+        "building": 767,
+        "dependencies": 3
       },
       "failed": false,
       "errors": 0,
@@ -4432,7 +4296,6 @@ Use Ctrl+C to close it
           "loc": "37:19-60"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
@@ -4461,15 +4324,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -4494,9 +4357,6 @@ Use Ctrl+C to close it
           "userRequest": "react-dom",
           "loc": "63:0-8"
         }
-      ],
-      "usedExports": [
-        "default"
       ],
       "providedExports": null,
       "optimizationBailout": [],
@@ -4526,8 +4386,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4535,15 +4395,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react/index.js",
           "name": "./node_modules/react/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 14,
-        "building": 92
+        "factory": 10,
+        "building": 62
       },
       "failed": false,
       "errors": 0,
@@ -4560,7 +4420,6 @@ Use Ctrl+C to close it
           "loc": "6:19-56"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
@@ -4589,15 +4448,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -4650,7 +4509,6 @@ Use Ctrl+C to close it
           "loc": "63:30-35"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
@@ -4679,8 +4537,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4688,9 +4546,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
           "name": "./node_modules/react-dom/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4698,9 +4556,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
           "name": "./node_modules/react-dom/cjs/react-dom.development.js",
           "profile": {
-            "factory": 12,
-            "building": 1305,
-            "dependencies": 2
+            "factory": 11,
+            "building": 767,
+            "dependencies": 3
           }
         },
         {
@@ -4709,13 +4567,13 @@ Use Ctrl+C to close it
           "name": "./node_modules/scheduler/tracing.js",
           "profile": {
             "factory": 5,
-            "building": 6
+            "building": 0
           }
         }
       ],
       "profile": {
-        "factory": 1,
-        "building": 15
+        "factory": 0,
+        "building": 9
       },
       "failed": false,
       "errors": 0,
@@ -4732,7 +4590,6 @@ Use Ctrl+C to close it
           "loc": "6:19-68"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 4,
@@ -4761,8 +4618,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4770,9 +4627,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
           "name": "./node_modules/react-dom/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4780,9 +4637,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
           "name": "./node_modules/react-dom/cjs/react-dom.development.js",
           "profile": {
-            "factory": 12,
-            "building": 1305,
-            "dependencies": 2
+            "factory": 11,
+            "building": 767,
+            "dependencies": 3
           }
         },
         {
@@ -4791,13 +4648,13 @@ Use Ctrl+C to close it
           "name": "./node_modules/scheduler/index.js",
           "profile": {
             "factory": 5,
-            "building": 6
+            "building": 0
           }
         }
       ],
       "profile": {
         "factory": 1,
-        "building": 18
+        "building": 11
       },
       "failed": false,
       "errors": 0,
@@ -4814,7 +4671,6 @@ Use Ctrl+C to close it
           "loc": "6:19-60"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 4,
@@ -4843,8 +4699,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4852,9 +4708,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
           "name": "./node_modules/react-dom/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4862,15 +4718,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
           "name": "./node_modules/react-dom/cjs/react-dom.development.js",
           "profile": {
-            "factory": 12,
-            "building": 1305,
-            "dependencies": 2
+            "factory": 11,
+            "building": 767,
+            "dependencies": 3
           }
         }
       ],
       "profile": {
         "factory": 5,
-        "building": 6
+        "building": 0
       },
       "failed": false,
       "errors": 0,
@@ -4887,7 +4743,6 @@ Use Ctrl+C to close it
           "loc": "20:16-36"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
@@ -4916,8 +4771,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4925,9 +4780,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/index.js",
           "name": "./node_modules/react-dom/index.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -4935,15 +4790,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/react-dom/cjs/react-dom.development.js",
           "name": "./node_modules/react-dom/cjs/react-dom.development.js",
           "profile": {
-            "factory": 12,
-            "building": 1305,
-            "dependencies": 2
+            "factory": 11,
+            "building": 767,
+            "dependencies": 3
           }
         }
       ],
       "profile": {
         "factory": 5,
-        "building": 6
+        "building": 0
       },
       "failed": false,
       "errors": 0,
@@ -4960,7 +4815,6 @@ Use Ctrl+C to close it
           "loc": "22:14-42"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
@@ -4989,8 +4843,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -4998,15 +4852,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.scss",
           "name": "./src/index.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
-        "factory": 258,
-        "building": 1064
+        "factory": 88,
+        "building": 406
       },
       "failed": false,
       "errors": 0,
@@ -5059,7 +4913,6 @@ Use Ctrl+C to close it
           "loc": "1:10-94"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
@@ -5088,8 +4941,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -5097,15 +4950,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/lodash/lodash.js",
           "name": "./node_modules/lodash/lodash.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
         "factory": 13,
-        "building": 8
+        "building": 4
       },
       "failed": false,
       "errors": 0,
@@ -5122,7 +4975,6 @@ Use Ctrl+C to close it
           "loc": "1:0-41"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
@@ -5151,8 +5003,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -5160,15 +5012,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/lodash/lodash.js",
           "name": "./node_modules/lodash/lodash.js",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         }
       ],
       "profile": {
         "factory": 13,
-        "building": 8
+        "building": 4
       },
       "failed": false,
       "errors": 0,
@@ -5185,7 +5037,6 @@ Use Ctrl+C to close it
           "loc": "1:0-41"
         }
       ],
-      "usedExports": true,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
@@ -5214,15 +5065,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -5248,9 +5099,6 @@ Use Ctrl+C to close it
           "loc": "32:0-7"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": [
         "default"
       ],
@@ -5264,7 +5112,7 @@ Use Ctrl+C to close it
       "name": "./src/HMR/number.js",
       "index": 16,
       "index2": 15,
-      "size": 190,
+      "size": 194,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5281,15 +5129,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -5342,13 +5190,12 @@ Use Ctrl+C to close it
           "loc": "38:4-10"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "function number() {\n  var div = document.createElement('div');\n  div.setAttribute('id', 'number');\n  div.innerHTML = 900000000000;\n  document.body.appendChild(div);\n}\n\nexport default number;"
+      "source": "function number() {\n  var div = document.createElement('div');\n  div.setAttribute('id', 'number');\n  div.innerHTML = 8888999000000000;\n  document.body.appendChild(div);\n}\n\nexport default number;"
     },
     {
       "id": "./src/HMR/style.css",
@@ -5373,15 +5220,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -5398,7 +5245,6 @@ Use Ctrl+C to close it
           "loc": "5:0-25"
         }
       ],
-      "usedExports": false,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
@@ -5410,7 +5256,7 @@ Use Ctrl+C to close it
       "name": "./src/click.js",
       "index": 38,
       "index2": 38,
-      "size": 203,
+      "size": 241,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5427,15 +5273,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -5452,21 +5298,20 @@ Use Ctrl+C to close it
           "loc": "125:2-127:12"
         }
       ],
-      "usedExports": true,
       "providedExports": [
         "default"
       ],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "function handleClick() {\n  let el = document.createElement('div');\n  el.innerHTML = 'hello miss miao click me, study prefetch and preload';\n  document.body.appendChild(el);\n}\n\nexport default handleClick;"
+      "source": "function handleClick() {\n  let el = document.createElement('div');\n  el.setAttribute('id', 'click_div');\n  el.innerHTML = 'hello miss miao click me, study prefetch and preload';\n  document.body.appendChild(el);\n}\n\nexport default handleClick;"
     },
     {
       "id": "./src/font/iconfont.eot?t=1599402226159",
-      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.eot?t=1599402226159",
+      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.eot?t=1599402226159",
       "name": "./src/font/iconfont.eot?t=1599402226159",
       "index": 9,
       "index2": 6,
-      "size": 80,
+      "size": 85,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5483,8 +5328,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -5492,9 +5337,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./src/iconfont.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -5502,21 +5347,21 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
           "profile": {
-            "factory": 252,
-            "building": 842,
-            "dependencies": 0
+            "factory": 87,
+            "building": 344,
+            "dependencies": 2
           }
         }
       ],
       "profile": {
-        "factory": 26,
+        "factory": 21,
         "building": 4
       },
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "c8d903635a4fe77301efb4a9128dc97f.eot"
+        "font/c8d903635a4fe77301efb4a9128dc97f.eot"
       ],
       "reasons": [
         {
@@ -5547,23 +5392,20 @@ Use Ctrl+C to close it
           "loc": "10:73-102"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": [
         "default"
       ],
       "optimizationBailout": [],
       "depth": 3,
-      "source": "export default __webpack_public_path__ + \"c8d903635a4fe77301efb4a9128dc97f.eot\";"
+      "source": "export default __webpack_public_path__ + \"font/c8d903635a4fe77301efb4a9128dc97f.eot\";"
     },
     {
       "id": "./src/font/iconfont.svg?t=1599402226159",
-      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.svg?t=1599402226159",
+      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.svg?t=1599402226159",
       "name": "./src/font/iconfont.svg?t=1599402226159",
       "index": 12,
       "index2": 9,
-      "size": 80,
+      "size": 85,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5580,8 +5422,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -5589,9 +5431,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./src/iconfont.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -5599,21 +5441,21 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
           "profile": {
-            "factory": 252,
-            "building": 842,
-            "dependencies": 0
+            "factory": 87,
+            "building": 344,
+            "dependencies": 2
           }
         }
       ],
       "profile": {
-        "factory": 26,
+        "factory": 21,
         "building": 4
       },
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "4a40b3f1e21f2b32a61ce4d248b1f4ea.svg"
+        "font/4a40b3f1e21f2b32a61ce4d248b1f4ea.svg"
       ],
       "reasons": [
         {
@@ -5635,23 +5477,20 @@ Use Ctrl+C to close it
           "loc": "13:73-102"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": [
         "default"
       ],
       "optimizationBailout": [],
       "depth": 3,
-      "source": "export default __webpack_public_path__ + \"4a40b3f1e21f2b32a61ce4d248b1f4ea.svg\";"
+      "source": "export default __webpack_public_path__ + \"font/4a40b3f1e21f2b32a61ce4d248b1f4ea.svg\";"
     },
     {
       "id": "./src/font/iconfont.ttf?t=1599402226159",
-      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.ttf?t=1599402226159",
+      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.ttf?t=1599402226159",
       "name": "./src/font/iconfont.ttf?t=1599402226159",
       "index": 11,
       "index2": 8,
-      "size": 80,
+      "size": 85,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5668,8 +5507,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -5677,9 +5516,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./src/iconfont.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -5687,21 +5526,21 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
           "profile": {
-            "factory": 252,
-            "building": 842,
-            "dependencies": 0
+            "factory": 87,
+            "building": 344,
+            "dependencies": 2
           }
         }
       ],
       "profile": {
-        "factory": 26,
+        "factory": 21,
         "building": 4
       },
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "765a855a4fe9c1f7dbd0be304bbfc2b7.ttf"
+        "font/765a855a4fe9c1f7dbd0be304bbfc2b7.ttf"
       ],
       "reasons": [
         {
@@ -5723,23 +5562,20 @@ Use Ctrl+C to close it
           "loc": "12:73-102"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": [
         "default"
       ],
       "optimizationBailout": [],
       "depth": 3,
-      "source": "export default __webpack_public_path__ + \"765a855a4fe9c1f7dbd0be304bbfc2b7.ttf\";"
+      "source": "export default __webpack_public_path__ + \"font/765a855a4fe9c1f7dbd0be304bbfc2b7.ttf\";"
     },
     {
       "id": "./src/font/iconfont.woff?t=1599402226159",
-      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.woff?t=1599402226159",
+      "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/file-loader/dist/cjs.js??ref--6!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/font/iconfont.woff?t=1599402226159",
       "name": "./src/font/iconfont.woff?t=1599402226159",
       "index": 10,
       "index2": 7,
-      "size": 81,
+      "size": 86,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5756,8 +5592,8 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         },
         {
@@ -5765,9 +5601,9 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/style-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./src/iconfont.scss",
           "profile": {
-            "factory": 473,
-            "building": 1157,
-            "dependencies": 252
+            "factory": 232,
+            "building": 602,
+            "dependencies": 87
           }
         },
         {
@@ -5775,21 +5611,21 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/css-loader/dist/cjs.js??ref--7-1!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/sass-loader/dist/cjs.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/postcss-loader/src/index.js!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/iconfont.scss",
           "name": "./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/iconfont.scss",
           "profile": {
-            "factory": 252,
-            "building": 842,
-            "dependencies": 0
+            "factory": 87,
+            "building": 344,
+            "dependencies": 2
           }
         }
       ],
       "profile": {
-        "factory": 26,
+        "factory": 21,
         "building": 4
       },
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "f234d48602bea727f1504087f8118470.woff"
+        "font/f234d48602bea727f1504087f8118470.woff"
       ],
       "reasons": [
         {
@@ -5811,15 +5647,12 @@ Use Ctrl+C to close it
           "loc": "11:73-102"
         }
       ],
-      "usedExports": [
-        "default"
-      ],
       "providedExports": [
         "default"
       ],
       "optimizationBailout": [],
       "depth": 3,
-      "source": "export default __webpack_public_path__ + \"f234d48602bea727f1504087f8118470.woff\";"
+      "source": "export default __webpack_public_path__ + \"font/f234d48602bea727f1504087f8118470.woff\";"
     },
     {
       "id": "./src/iconfont.scss",
@@ -5844,15 +5677,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -5869,7 +5702,6 @@ Use Ctrl+C to close it
           "loc": "3:0-25"
         }
       ],
-      "usedExports": false,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
@@ -5881,7 +5713,7 @@ Use Ctrl+C to close it
       "name": "./src/index.js",
       "index": 0,
       "index2": 37,
-      "size": 4259,
+      "size": 4514,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5894,8 +5726,8 @@ Use Ctrl+C to close it
       "issuerName": null,
       "issuerPath": null,
       "profile": {
-        "factory": 30,
-        "building": 742
+        "factory": 33,
+        "building": 349
       },
       "failed": false,
       "errors": 0,
@@ -5912,11 +5744,10 @@ Use Ctrl+C to close it
           "loc": "main"
         }
       ],
-      "usedExports": true,
       "providedExports": [],
       "optimizationBailout": [],
       "depth": 0,
-      "source": "import avatar from './md.jpg';\nimport './index.scss';\nimport './iconfont.scss'; // test hmr\n\nimport './HMR/style.css';\n/**\n * '@babel/polyfill' 会在window环境中绑定一些全局变量，比如promise\n * 会使包变得很大,所以配置了presets\n * 使用useBuiltIns配置的时候可以不用手动引入polyfill\n */\n// import '@babel/polyfill' \n\nvar img = new Image();\nimg.src = avatar;\nimg.classList.add('avatar');\nvar cat = document.getElementById(\"cat\");\ncat.append(img); // test hot-module-replacement\n\n/* var btn = document.createElement('button')\nbtn.innerHTML = '新增'\ndocument.body.appendChild(btn)\n\nbtn.onclick = function () {\n    var div = document.createElement('div')\n    div.innerHTML = 'item'\n    document.body.appendChild(div)\n}\n*/\n\nimport counter from './HMR/counter';\nimport number from './HMR/number';\ncounter();\nnumber(); // 如果当前项目开启了HMR\n\nif (module.hot) {\n  module.hot.accept('./HMR/number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // test babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // test babel deal react code\n\nimport React, { Component } from 'react';\nimport ReactDom from 'react-dom';\n\nclass App extends Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      style: {\n        marginTop: 100,\n        marginBottom: 100\n      }\n    }, \"hello react !!!!\");\n  }\n\n}\n\nReactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root')); // test tree shaking: \n\n/**\n * 作用：把一个模块里没用的东西都摇晃掉，引入的东西再打包，没引入的就不打包\n * tree shaking 只支持es module引入方式（静态引入）\n * 开发环境下，需在webpack.config中配置optimization:{}，在package中配置：sideEffects: false 或 sideEffects: ['*.css']\n * sideEffects: ['*.css']-----代表css文件不采用 tree shaking方式打包\n */\n\nimport { add } from './math';\nadd(1, 2); // test code splitting\n\n/**\n * 方法一\n * 会使lodash和业务代码一起打包到main.js文件中，会使得main.js文件非常大（假设2mb）\n * 用户首次访问页面时，需要加载main.js（2mb）\n * 当页面业务逻辑发生变化时，又要加载2mb的内容\n */\n// import _ from 'lodash';\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法二\n * 把lodash放单独的一个lodash.js文件，并在webpack中配置入口\n * 这样在打包的时候main.js就会被拆成lodash.js（1mb）和main.js（1mb）\n * 当页面业务逻辑发生变化时，就只需要加载main.js即可(1mb),lodash.js会被缓存到浏览器中\n */\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法三(同步代码分割)\n * 利用webpack自带的splitChunks功能\n * 就不需要手动创建lodash文件和entry\n */\n\nimport _ from 'lodash';\nconsole.log(_.join([1, 2, 3, 4, 5], '***'));\n/**\n * 异步代码分割 不用做任何配置\n */\n// function getComponent() {\n//     return import(/* webpackChunkName: 'lodash' */ 'lodash').then(({ default: _ }) => {\n//         var element = document.createElement('div')\n//         console.log('_________', _)\n//         element.innerHTML = _.concat(['miss', 'miao'], '8888888')\n//         return element\n//     })\n// }\n\n/*\ngetComponent().then(element => {\n    console.log('run getComponent')\n    document.body.appendChild(element)\n})*/\n\n/**\n * 学习prefetch和preload，以及通过提高js利用率来提高页面第一次加载速度，即提高性能\n * 把交互代码放到click.js中，在index中按需异步引入\n * click.js被打包到里单独的文件中\n */\n\ndocument.addEventListener('click', () => {\n  import(\n  /*webpackPrefetch: true*/\n  './click').then(({\n    default: func\n  }) => {\n    func();\n  });\n});\n/**\n * test css spliting\n * 使用mini-css-extract-plugin插件，把css文件单独打包到一个文件\n * 需配置loader和plugin\n * 此插件不支持hmr，所以适合在线上打包使用\n *  */\n\nimport './test_css/style.css';\nimport './test_css/style1.css';\nconsole.log('miao test css split'); // test shimming\n\nimport { ui } from './test_shimming/jquery.ui';\nui();\nconsole.log('this---', this);\nconsole.log(this === window);"
+      "source": "import avatar from './md.jpg';\nimport './index.scss';\nimport './iconfont.scss'; // test hmr\n\nimport './HMR/style.css';\n/**\n * '@babel/polyfill' 会在window环境中绑定一些全局变量，比如promise\n * 会使包变得很大,所以配置了presets\n * 使用useBuiltIns配置的时候可以不用手动引入polyfill\n */\n// import '@babel/polyfill' \n\nvar img = new Image();\nimg.src = avatar;\nimg.classList.add('avatar');\nvar cat = document.getElementById(\"cat\");\ncat.append(img); // test hot-module-replacement\n\n/* var btn = document.createElement('button')\nbtn.innerHTML = '新增'\ndocument.body.appendChild(btn)\n\nbtn.onclick = function () {\n    var div = document.createElement('div')\n    div.innerHTML = 'item'\n    document.body.appendChild(div)\n}\n*/\n\nimport counter from './HMR/counter';\nimport number from './HMR/number';\ncounter();\nnumber(); // 如果当前项目开启了HMR\n\nif (module.hot) {\n  module.hot.accept('./HMR/number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // test babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // test babel deal react code\n\nimport React, { Component } from 'react';\nimport ReactDom from 'react-dom';\n\nclass App extends Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", {\n      style: {\n        marginTop: 100,\n        marginBottom: 100\n      }\n    }, \"hello react !!!!\");\n  }\n\n}\n\nReactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root')); // test tree shaking: \n\n/**\n * 作用：把一个模块里没用的东西都摇晃掉，引入的东西再打包，没引入的就不打包\n * tree shaking 只支持es module引入方式（静态引入）\n * 开发环境下，需在webpack.config中配置optimization:{}，在package中配置：sideEffects: false 或 sideEffects: ['*.css']\n * sideEffects: ['*.css']-----代表css文件不采用 tree shaking方式打包\n */\n\nimport { add } from './math';\nadd(1, 2); // test code splitting\n\n/**\n * 方法一\n * 会使lodash和业务代码一起打包到main.js文件中，会使得main.js文件非常大（假设2mb）\n * 用户首次访问页面时，需要加载main.js（2mb）\n * 当页面业务逻辑发生变化时，又要加载2mb的内容\n */\n// import _ from 'lodash';\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法二\n * 把lodash放单独的一个lodash.js文件，并在webpack中配置入口\n * 这样在打包的时候main.js就会被拆成lodash.js（1mb）和main.js（1mb）\n * 当页面业务逻辑发生变化时，就只需要加载main.js即可(1mb),lodash.js会被缓存到浏览器中\n */\n// console.log(_.join([1, 2, 3, 4, 5], '***'))\n\n/**\n * 方法三(同步代码分割)\n * 利用webpack自带的splitChunks功能\n * 就不需要手动创建lodash文件和entry\n */\n\nimport _ from 'lodash';\nconsole.log(_.join([1, 2, 3, 4, 5], '***'));\n/**\n * 异步代码分割 不用做任何配置\n */\n// function getComponent() {\n//     return import(/* webpackChunkName: 'lodash' */ 'lodash').then(({ default: _ }) => {\n//         var element = document.createElement('div')\n//         console.log('_________', _)\n//         element.innerHTML = _.concat(['miss', 'miao'], '8888888')\n//         return element\n//     })\n// }\n\n/*\ngetComponent().then(element => {\n    console.log('run getComponent')\n    document.body.appendChild(element)\n})*/\n\n/**\n * 学习prefetch和preload，以及通过提高js利用率来提高页面第一次加载速度，即提高性能\n * 把交互代码放到click.js中，在index中按需异步引入\n * click.js被打包到里单独的文件中\n */\n\ndocument.addEventListener('click', () => {\n  import(\n  /*webpackPrefetch: true*/\n  './click').then(({\n    default: func\n  }) => {\n    func();\n  });\n}); // document.addEventListener('click', () => {\n//     let el = document.createElement('div')\n//     el.setAttribute('id', 'click_div')\n//     el.innerHTML = 'hello miss miao click me, study prefetch and preload'\n//     document.body.appendChild(el)\n// })\n\n/**\n * test css spliting\n * 使用mini-css-extract-plugin插件，把css文件单独打包到一个文件\n * 需配置loader和plugin\n * 此插件不支持hmr，所以适合在线上打包使用\n *  */\n\nimport './test_css/style.css';\nimport './test_css/style1.css';\nconsole.log('miao test css split'); // test shimming\n\nimport { ui } from './test_shimming/jquery.ui';\nui();\nconsole.log('this---', this);\nconsole.log(this === window);"
     },
     {
       "id": "./src/index.scss",
@@ -5941,15 +5772,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -5966,7 +5797,6 @@ Use Ctrl+C to close it
           "loc": "2:0-22"
         }
       ],
-      "usedExports": false,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
@@ -5995,15 +5825,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -6028,9 +5858,6 @@ Use Ctrl+C to close it
           "userRequest": "./math",
           "loc": "73:0-3"
         }
-      ],
-      "usedExports": [
-        "add"
       ],
       "providedExports": [
         "add",
@@ -6063,15 +5890,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -6098,9 +5925,6 @@ Use Ctrl+C to close it
           "userRequest": "./md.jpg",
           "loc": "14:10-16"
         }
-      ],
-      "usedExports": [
-        "default"
       ],
       "providedExports": [
         "default"
@@ -6132,15 +5956,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -6154,10 +5978,9 @@ Use Ctrl+C to close it
           "moduleName": "./src/index.js",
           "type": "harmony side effect evaluation",
           "userRequest": "./test_css/style.css",
-          "loc": "140:0-30"
+          "loc": "146:0-30"
         }
       ],
-      "usedExports": false,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
@@ -6186,15 +6009,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -6208,10 +6031,9 @@ Use Ctrl+C to close it
           "moduleName": "./src/index.js",
           "type": "harmony side effect evaluation",
           "userRequest": "./test_css/style1.css",
-          "loc": "141:0-31"
+          "loc": "147:0-31"
         }
       ],
-      "usedExports": false,
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
@@ -6240,15 +6062,15 @@ Use Ctrl+C to close it
           "identifier": "/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/node_modules/babel-loader/lib/index.js??ref--5!/Users/zyl/Documents/资料/webpack视频教程/webpackStudy/src/index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 30,
-            "building": 742
+            "factory": 33,
+            "building": 349
           }
         }
       ],
       "profile": {
-        "factory": 473,
-        "building": 1157,
-        "dependencies": 252
+        "factory": 232,
+        "building": 602,
+        "dependencies": 87
       },
       "failed": false,
       "errors": 0,
@@ -6262,7 +6084,7 @@ Use Ctrl+C to close it
           "moduleName": "./src/index.js",
           "type": "harmony side effect evaluation",
           "userRequest": "./test_shimming/jquery.ui",
-          "loc": "144:0-47"
+          "loc": "150:0-47"
         },
         {
           "moduleId": "./src/index.js",
@@ -6271,11 +6093,8 @@ Use Ctrl+C to close it
           "moduleName": "./src/index.js",
           "type": "harmony import specifier",
           "userRequest": "./test_shimming/jquery.ui",
-          "loc": "145:0-2"
+          "loc": "151:0-2"
         }
-      ],
-      "usedExports": [
-        "ui"
       ],
       "providedExports": [
         "ui"
@@ -6305,7 +6124,7 @@ Use Ctrl+C to close it
       "assets": [
         {
           "name": "__child-HtmlWebpackPlugin_0",
-          "size": 5928,
+          "size": 5904,
           "chunks": [
             "HtmlWebpackPlugin_0"
           ],
@@ -6354,7 +6173,7 @@ Use Ctrl+C to close it
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "730f9240f127b39de427",
+          "hash": "6cb77f0126f8a50d5966",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -6379,8 +6198,8 @@ Use Ctrl+C to close it
               "issuerName": null,
               "issuerPath": null,
               "profile": {
-                "factory": 680,
-                "building": 88
+                "factory": 291,
+                "building": 89
               },
               "failed": false,
               "errors": 0,
@@ -6397,7 +6216,6 @@ Use Ctrl+C to close it
                   "loc": "HtmlWebpackPlugin_0"
                 }
               ],
-              "usedExports": true,
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 0,
@@ -6437,8 +6255,8 @@ Use Ctrl+C to close it
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 680,
-            "building": 88
+            "factory": 291,
+            "building": 89
           },
           "failed": false,
           "errors": 0,
@@ -6455,7 +6273,6 @@ Use Ctrl+C to close it
               "loc": "HtmlWebpackPlugin_0"
             }
           ],
-          "usedExports": true,
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 0,

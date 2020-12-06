@@ -14,7 +14,7 @@ const devConfig = {
         open: true, // 每次重启服务都会帮我们打开一个新的网页
         port: 8080,
         hot: true,
-        hotOnly: true, // 当hmr（hot）不生效时也不让浏览器刷新页面
+        hotOnly: true, // 当hmr（hot）不生效时也不让浏览器刷新页面,只是在控制台输出热更新失败
     },
     module: {
         rules: [
@@ -54,7 +54,7 @@ const devConfig = {
 
     // HtmlWebpackPlugin会在打包结束后，自动生成一个html文件，并把打包生成的js引入到这个html文件中
     /**plugin可以在webpack运行到某个时刻到时候自动帮你做一些事情，有点类似于生命周期函数 */
-    // CleanWebpackPlugin() 在打包之前自动删除之前打包到dist目录
+    // CleanWebpackPlugin() 在打包之前自动删除之前打包的dist目录
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],

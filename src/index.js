@@ -15,7 +15,7 @@ img.src = avatar
 img.classList.add('avatar')
 
 var cat = document.getElementById("cat")
-cat.append(img)
+// cat.append(img)
 
 // test hot-module-replacement
 /* var btn = document.createElement('button')
@@ -30,14 +30,14 @@ btn.onclick = function () {
 */
 import counter from './HMR/counter'
 import number from './HMR/number'
-counter()
-number()
+// counter()
+// number()
 
 // 如果当前项目开启了HMR
 if (module.hot) {
     module.hot.accept('./HMR/number', () => {
         document.body.removeChild(document.getElementById('number'))
-        number()
+        // number()
     })
 }
 
@@ -48,7 +48,7 @@ const arr = [
 ]
 
 arr.map(item => {
-    console.log(item)
+    // console.log(item)
 })
 
 // test babel deal react code
@@ -58,7 +58,7 @@ import ReactDom from 'react-dom'
 
 class App extends Component {
     render() {
-        return <div style={{ marginTop: 100, marginBottom: 100 }}>hello react !!!!</div>
+        return <div style={{ marginTop: 100, marginBottom: 100 }}>{_.join('hello', 'dll', 'manifest')}</div>
     }
 }
 
@@ -73,7 +73,7 @@ ReactDom.render(<App />, document.getElementById('root'))
  * sideEffects: ['*.css']-----代表css文件不采用 tree shaking方式打包
  */
 import { add } from './math'
-add(1, 2)
+// add(1, 2)
 
 
 // test code splitting
@@ -100,7 +100,7 @@ add(1, 2)
  * 就不需要手动创建lodash文件和entry
  */
 import _ from 'lodash';
-console.log(_.join([1, 2, 3, 4, 5], '***'))
+// console.log(_.join([1, 2, 3, 4, 5], '***'))
 
 
 /**
@@ -128,11 +128,21 @@ getComponent().then(element => {
  * click.js被打包到里单独的文件中
  */
 
+// document.addEventListener('click', () => {
+//     import(/*webpackPrefetch: true*/'./click').then(({ default: func }) => {
+//         func()
+//     })
+// })
+
+
 document.addEventListener('click', () => {
-    import(/*webpackPrefetch: true*/'./click').then(({ default: func }) => {
-        func()
-    })
+    let el = document.createElement('div')
+    el.setAttribute('id', 'click_div')
+    el.innerHTML = 'hello world'
+    document.body.appendChild(el)
 })
+
+
 
 /**
  * test css spliting
@@ -143,7 +153,7 @@ document.addEventListener('click', () => {
 
 import './test_css/style.css';
 import './test_css/style1.css';
-console.log('miao test css split');
+// console.log('miao test css split');
 
 // test shimming
 import { ui } from './test_shimming/jquery.ui'

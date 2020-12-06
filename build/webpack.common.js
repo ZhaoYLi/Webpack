@@ -1,11 +1,36 @@
 const path = require('path');
+const fs = require('fs')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const AddAssetHtmlWebpackPlugin = require('add-asset-html-webpack-plugin')
 const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { merge } = require('webpack-merge');
 const devConfig = require('./webpack.dev');
 const prodConfig = require('./webpack.prod');
+
+/**
+ * 如果有多个dll文件，即entry里配置了多个入口
+const plugins = []
+const files = fs.readdirSync(path.resolve(__dirname, '../dll'))
+console.log('files----', files)
+files.forEach(file => {
+    if ((/.*\.dll.js/).test(file)) {
+        plugins.push(
+            new AddAssetHtmlWebpackPlugin({
+                filepath: path.resolve(__dirname, '../dll/vendors.dll.js')
+            }),
+        )
+    }
+    if ((/.*\.manifest.json/).test(file)) {
+        new webpack.DllReferencePlugin({
+            manifest: path.resolve(__dirname, '../dll/vendors.manifest.json')
+        })
+    }
+})
+ * 多个dll文件 end
+ * 替换下方到plugins就行
+ */
 
 const commonConfig = {
     entry: {
@@ -72,8 +97,11 @@ const commonConfig = {
         {
             test: /\.(eot||ttf||svg||woff)$/,
             use: {
-                loader: 'file-loader'
-            }
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'font/'
+                }
+            },
         },
         ]
     },
@@ -93,16 +121,35 @@ const commonConfig = {
             $: 'jquery',
             _: 'lodash',
             _join: ['lodash', 'join']
+        }),
+        // 在打包后的html文件中引入dll文件
+        // 把文件挂在到页面上，这样页面上就会有一些全局变量
+        new AddAssetHtmlWebpackPlugin({
+            filepath: path.resolve(__dirname, '../dll/vendors.dll.js')
+        }),
+
+        // 结合library全局变量和manifest文件对第三方库进行分析
+        // 打包组件的时候，会对文件进行分析，当遇到第三方模块时，此插件会
+        // 到manifest文件中找映射关系，如果找到，就会去全局变量里拿,j
+        // 就不会动态的去node_modules里面引入,再打包到源代码中，这个过程会消耗时间
+        new webpack.DllReferencePlugin({
+            manifest: path.resolve(__dirname, '../dll/vendors.manifest.json')
         })
     ],
+
+    optimization: {
+        splitChunks: {
+            chunks: 'async'
+        }
+    },
 
     /**
      * 代码分割 
      * 分割同步代码，比如：import _ from 'lodash'
      * 但是配置项对同步异步打包都有影响
      *  
-   */
-    optimization: {
+
+   /* optimization: {
         /**
          * 此配置为了兼容老版本webpack做缓存：
          * 打包后会多出一个runtime文件
@@ -110,32 +157,32 @@ const commonConfig = {
          * manifest。manifest默认是既存在main里，也存在于vendors里，在打包的时候，在旧版的webpack中，
          * 可能会有差异，这就导致打包时即便没改变代码，contenthash也会变
          */
-        runtimeChunk: {
-            name: 'runtime'
-        },
-        /**
-    * test tree shaking
-    * 在开发环境模式下需要配置下面这个，生产环境不用，只用配sideEffects 
-    * usedExports: true释义：在使用tree-shaking的时候，webpack会对所有模块使用tree-shaking，
-    * 但是实际项目中，有的模块不需要摇晃，所以开启这个属性，再在package.json文件中列出不摇晃的模块。
-    * 开启tree-shaking会导致js中引入但是没实际使用的css代码无法打包到一个单独文件中，所以需要在package.json中修改
-    * 使用下面这个配置，就是告诉webpack有些模块不要用tree-shaking
-    * */
-        usedExports: true,
-        splitChunks: {
-            // all 对同步异步代码都进行分割, 但是要实现对同步代码分割的话还需要结合cacheGroup配置（参照官网or下方vendor配置）
-            chunks: 'all',
-            cacheGroups: {
-                // vendors: false, // 打包后对lodash文件名去掉前缀vendor
-                vendors: {
-                    test: /[\\/]node_modules[\\/]/, // 分割同步代码的时候，检测到属于node_modules里到就分割打包到vendors文件里
-                    priority: -10,
-                    filename: 'vendors.js'
-                },
-                default: false
-            }
-        }
-    },
+    /* runtimeChunk: {
+         name: 'runtime'
+     },*/
+    /**
+* test tree shaking
+* 在开发环境模式下需要配置下面这个，生产环境不用，只用配sideEffects 
+* usedExports: true释义：在使用tree-shaking的时候，webpack会对所有模块使用tree-shaking，
+* 但是实际项目中，有的模块不需要摇晃，所以开启这个属性，再在package.json文件中列出不摇晃的模块。
+* 开启tree-shaking会导致js中引入但是没实际使用的css代码无法打包到一个单独文件中，所以需要在package.json中修改
+* 使用下面这个配置，就是告诉webpack有些模块不要用tree-shaking
+* */
+    /*   usedExports: true,
+       splitChunks: {
+           // all 对同步异步代码都进行分割, 但是要实现对同步代码分割的话还需要结合cacheGroup配置（参照官网or下方vendor配置）
+           chunks: 'all', //默认值为“async”，默认只对异步代码进行分割
+           cacheGroups: {
+               // vendors: false, // 打包后对lodash文件名去掉前缀vendor
+               vendors: {
+                   test: /[\\/]node_modules[\\/]/, // 分割同步代码的时候，检测到属于node_modules里到就分割打包到vendors文件里
+                   priority: -10,
+                   filename: 'vendors.js'
+               },
+               default: false
+           }
+       }
+   }, */
 
     output: {
         // filename: 'bundle.js',
